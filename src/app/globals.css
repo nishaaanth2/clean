@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800;900&family=Mrs+Saint+Delafield&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --screen-height: 100vh; /* Define a variable for the screen height */
+  }
+  
+  .full-height {
+    height: var(--screen-height);
+  }
+  
+  .five-sixths-height {
+    height: calc(var(--screen-height) * 5 / 6); /* Set the div to 5/6 of the screen height */
+  }
+
+  .four-sixths-height {
+    height: calc(var(--screen-height) * 4 / 6); /* Set the div to 5/6 of the screen height */
+  }
+body {
+    margin: 0px;
+    font-family: 'Manrope', sans-serif;
+    background: #e0ded1;
+}
+
+.negative-margin-top{
+        margin-top: -50vh;
+}
+
+.css-hscreen{
+    height: 44rem;
+}
+.font-perfect-size{
+    font-size: 29px ;
+    line-height: 1;
+}
+.font-color-light {
+    color: #e0ded1;
+}
+
+.font-color-dark {
+    color: #1f1f1f;
+}
+
+.font-cursive {
+    font-family: 'Mrs Saint Delafield', cursive;
+}
+
+.font-epi {
+    font-family: 'Epilogue';
+}
+
+.bg-dark {
+    background-color: #1f1f1f;
+}
+
+
+.bg-good-green {
+    background-color: #a59b6d;
+}
+
+.bg-light {
+    background-color: #e0ded1;
+}
