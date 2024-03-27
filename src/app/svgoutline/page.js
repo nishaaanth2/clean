@@ -35,7 +35,7 @@ const Home = () => {
               Database
             </h1>
             <p className="-mt-2 font-poppins text-neutral-500 tracking-wide">
-              Every project is a full Postgres database, the world's most
+              Every project is a full Postgres database, the world&apos;s most
               trusted relational database.
             </p>
           </div>
