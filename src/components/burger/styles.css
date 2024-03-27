@@ -1,0 +1,73 @@
+.burger {
+  width: 36px;
+  position: relative;
+  pointer-events: none;
+}
+
+.burger::after,
+.burger::before {
+  content: '';
+  height: 1px;
+  width: 100%;
+  background-color: black;
+  position: relative;
+  display: block;
+  transition: all 1s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.burger::after {
+  top: -5px;
+}
+
+.burger::before {
+  top: 5px;
+}
+
+.burgerActive::after {
+  transform: rotate(45deg);
+  top: -1px;
+}
+
+.burgerActive::before {
+  transform: rotate(-45deg);
+  top: 1px;
+}
+
+.cls-1{fill:#231f20;}
+
+.clz-1{fill:#dfddd0;}.clz-2{fill:#a49a6d;}
+
+
+
+
+.contentx{
+  font-size: 22px;
+  font-weight: 400;
+  font-family: 'Epilogue';
+  line-height: normal;
+  letter-spacing: 0.1em;
+  padding-top: 8px;
+}
+.marquee {
+  position: absolute;
+  height: 100vh;
+  width: 100vh;
+  /* right: calc(100% - 70px); */
+  rotate: 90deg;
+  /* max-width: 100%; */
+  overflow-x: hidden;
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 32s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(-10%); }
+  to { transform: translateX(-50%); }
+}
+
+.cls-1{fill:#231f20}.cls-2{fill:#a69b6d;}.cls-3{fill:#130a0d;stroke:#130a0d;stroke-miterlimit:10;stroke-width:0.25px;}
