@@ -210,7 +210,7 @@ export default function Contact() {
               </span>
             </div>
 
-            <div className="w-fit">Write to us if you'd like to Purchase this Brand</div>
+            <div className="w-fit">Write to us if you&apos;d like to Purchase this Brand</div>
             </div>
           </div>
         </div>
