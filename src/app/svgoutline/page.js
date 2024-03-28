@@ -3,6 +3,7 @@ import { useRef, useState } from "react"
 import Flame from "@/components/flame"
 import Nlame from "@/components/nflame"
 import "./styles.css";
+import Head from "next/head";
 
 const Home = () => {
   const cardsRef = useRef(null)
@@ -21,6 +22,11 @@ const Home = () => {
   }
 
   return (
+    <>
+     <Head> {/* Use Head component to modify meta tags */}
+        <title>SVG Outline Glow</title> {/* Set custom title */}
+        <meta name="description" content="For all custom svg you a emerald glow outline" /> {/* Set custom description */}
+      </Head>
     <main className="w-full h-screen flex place-items-center justify-center">
       <section
         className="card"
@@ -57,6 +63,7 @@ const Home = () => {
         </div>
       </section>
     </main>
+    </>
   )
 }
 
