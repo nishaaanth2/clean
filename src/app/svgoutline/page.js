@@ -38,7 +38,7 @@ const Home = () => {
         <div className="flex flex-col w-2/5 justify-between">
           <div className="flex flex-col gap-5">
             <h1 className="font-poppins text-neutral-200 tracking-wide text-2xl">
-              Database
+            SVG Outline Glow
             </h1>
             <p className="-mt-2 font-poppins text-neutral-500 tracking-wide">
               Every project is a full Postgres database, the world&apos;s most
