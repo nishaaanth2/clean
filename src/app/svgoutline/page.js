@@ -23,10 +23,32 @@ const Home = () => {
 
   return (
     <>
-     <Head> {/* Use Head component to modify meta tags */}
-        <title>SVG Outline Glow</title> {/* Set custom title */}
-        <meta name="description" content="For all custom svg you a emerald glow outline" /> {/* Set custom description */}
-      </Head>
+
+    <head>
+    {/* Primary Meta Tags  */}
+<title>SVG Outline Glow</title>
+<meta name="title" content="SVG Outline Glow" />
+<meta name="description" content="SVG Outline Glow" />
+
+{/* <!-- Open Graph / Facebook --> */}
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://clean.nishaanth.com/svgoutline" />
+<meta property="og:title" content="SVG Outline Glow" />
+<meta property="og:description" content="SVG Outline Glow Content" />
+<meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+{/* <!-- Twitter --> */}
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://clean.nishaanth.com/svgoutline" />
+<meta property="twitter:title" content="SVG Outline Glow" />
+<meta property="twitter:description" content="SVG Outline Glow Descp" />
+<meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+</head>
+
+     {/* <Head> 
+        <title>SVG Outline Glow</title> 
+        <meta name="description" content="For all custom svg you a emerald glow outline" /> 
+      </Head> */}
     <main className="w-full h-screen flex place-items-center justify-center">
       <section
         className="card"
