@@ -8,6 +8,27 @@ const myFont1 = localFont({ src: "../../../public/Karla-Regular.ttf" });
 
 export default function Home() {
   return (
+    <>
+     <head>
+    {/* Primary Meta Tags  */}
+<title>KJ Portfolio</title>
+<meta name="title" content="KJ Portfolio" />
+<meta name="description" content="A Desginer's Portfolio" />
+
+{/* <!-- Open Graph / Facebook --> */}
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://clean.nishaanth.com/kj" />
+<meta property="og:title" content="KJ Portfolio" />
+<meta property="og:description" content="A Desginer's Portfolio" />
+<meta property="og:image" content="https://clean.nishaanth.com/homebanner2.jpeg" />
+
+{/* <!-- Twitter --> */}
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://clean.nishaanth.com/kj" />
+<meta property="twitter:title" content="KJ Portfolio" />
+<meta property="twitter:description" content="A Desginer's Portfolio" />
+<meta property="twitter:image" content="https://clean.nishaanth.com/homebanner2.jpeg" />
+</head>
     <div>
       <main
         className={`flex md:h-[calc(100vh-50px)] bg-[#eae8db]  flex-col items-center justify-between md:px-14  py-6  ${myFont1.className}`}
@@ -196,5 +217,6 @@ export default function Home() {
         </div>
       </div>
     </div>
+    </>
   );
 }

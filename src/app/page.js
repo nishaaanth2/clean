@@ -22,8 +22,8 @@ const linkDetails = [
     link: "/carousel",
   },
   {
-    title: "Hero Banner",
-    desc: "Dome Hero Banner Template",
+    title: "KJ Portfolio",
+    desc: "A Desginer's Portfolio",
     link: "/kj",
   },
   {
