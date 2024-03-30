@@ -20,29 +20,32 @@ const Home = () => {
       setCursor({ x: x, y: y })
     }
   }
-
+  const otitle = "SVG Outline Glow New"
+  const odescription = "SVG Outline Glow Content New"
+  const ourl = "https://clean.nishaanth.com/svgoutline"
+  const oimage = "https://metatags.io/images/meta-tags.png"
   return (
     <>
 
     <head>
     {/* Primary Meta Tags  */}
-<title>SVG Outline Glow</title>
-<meta name="title" content="SVG Outline Glow" />
-<meta name="description" content="SVG Outline Glow Content" />
+<title>{otitle}</title>
+<meta name="title" content={otitle} />
+<meta name="description" content={odescription} />
 
 {/* <!-- Open Graph / Facebook --> */}
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://clean.nishaanth.com/svgoutline" />
-<meta property="og:title" content="SVG Outline Glow" />
-<meta property="og:description" content="SVG Outline Glow Content" />
-<meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+<meta property="og:url" content={ourl} />
+<meta property="og:title" content={otitle} />
+<meta property="og:description" content={odescription} />
+<meta property="og:image" content={oimage} />
 
 {/* <!-- Twitter --> */}
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content="https://clean.nishaanth.com/svgoutline" />
-<meta property="twitter:title" content="SVG Outline Glow" />
-<meta property="twitter:description" content="SVG Outline Glow Content" />
-<meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+<meta property="twitter:url" content={ourl} />
+<meta property="twitter:title" content={otitle} />
+<meta property="twitter:description" content={odescription} />
+<meta property="twitter:image" content={oimage} />
 </head>
 
      {/* <Head> 
@@ -63,21 +66,10 @@ const Home = () => {
             SVG Outline Glow
             </h1>
             <p className="-mt-2 font-poppins text-neutral-500 tracking-wide">
-              Every project is a full Postgres database, the world&apos;s most
-              trusted relational database.
+              A SVG outline glow animation. If you want in your own svg, contact nishaanthms1@gmail.com.
             </p>
           </div>
-          <div className="flex flex-col font-poppins text-neutral-200 tracking-wide">
-            <span className="flex flex-row gap-2">
-              <p>100% portable</p>
-            </span>
-            <span className="flex flex-row gap-2">
-              <p>Built-in Auth with RLS</p>
-            </span>
-            <span className="flex flex-row gap-2">
-              <p>Easy to extend</p>
-            </span>
-          </div>
+          
         </div>
         <div className="w-3/5 flex flex-col place-items-center">
           {/* <Flame cursor={cursor} cardRef={cardsRef} mouseOnCard={mouseOnCard} /> */}
