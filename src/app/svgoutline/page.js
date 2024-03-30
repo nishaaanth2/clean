@@ -28,7 +28,7 @@ const Home = () => {
     {/* Primary Meta Tags  */}
 <title>SVG Outline Glow</title>
 <meta name="title" content="SVG Outline Glow" />
-<meta name="description" content="SVG Outline Glow" />
+<meta name="description" content="SVG Outline Glow Content" />
 
 {/* <!-- Open Graph / Facebook --> */}
 <meta property="og:type" content="website" />
@@ -41,7 +41,7 @@ const Home = () => {
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content="https://clean.nishaanth.com/svgoutline" />
 <meta property="twitter:title" content="SVG Outline Glow" />
-<meta property="twitter:description" content="SVG Outline Glow Descp" />
+<meta property="twitter:description" content="SVG Outline Glow Content" />
 <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
 </head>
 
