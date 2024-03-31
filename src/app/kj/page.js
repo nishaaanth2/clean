@@ -20,14 +20,14 @@ export default function Home() {
 <meta property="og:url" content="https://clean.nishaanth.com/kj" />
 <meta property="og:title" content="KJ Portfolio" />
 <meta property="og:description" content="A Desginer's Portfolio" />
-<meta property="og:image" content="https://clean.nishaanth.com/og/kj.jpeg" />
+<meta property="og:image" content="https://clean.nishaanth.com/og/kj.png" />
 
 {/* <!-- Twitter --> */}
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content="https://clean.nishaanth.com/kj" />
 <meta property="twitter:title" content="KJ Portfolio" />
 <meta property="twitter:description" content="A Desginer's Portfolio" />
-<meta property="twitter:image" content="https://clean.nishaanth.com/og/kj.jpeg" />
+<meta property="twitter:image" content="https://clean.nishaanth.com/og/kj.png" />
 </head>
     <div>
       <main

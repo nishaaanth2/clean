@@ -23,7 +23,7 @@ const Home = () => {
   const otitle = "SVG Outline Glow New"
   const odescription = "SVG Outline Glow Content New"
   const ourl = "https://clean.nishaanth.com/svgoutline"
-  const oimage = "https://metatags.io/images/meta-tags.png"
+  const oimage = "https://clean.nishaanth.com/og/svgoutline.png"
   return (
     <>
 
