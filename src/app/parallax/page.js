@@ -12,7 +12,7 @@ export default function Example() {
     <div class="bg-white p-4 sm:p-8">
       <div
         class="font-inter text-2xl font-extrabold tracking-tight text-black">
-        Majestic peaks, nature's embrace.
+        Majestic peaks, nature&apos;s embrace.
       </div>
       <div class="mt-1 text-sm font-medium text-slate-500">
         Adventure calls, conquer mountain trails.
