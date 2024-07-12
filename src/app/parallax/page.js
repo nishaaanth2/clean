@@ -2,8 +2,9 @@
 export default function Example() {
 
   return (<>
-  <main className="w-full h-screen "></main>
-  
+  <main className="w-full h-screen flex items-center justify-center"></main>
+    
+    Scroll down ...
   
     <div
   class="h-[700px] w-screen  overflow-y-scroll bg-cover bg-fixed bg-center bg-no-repeat shadow-lg bg-[url('/bg1.jpg')]"
