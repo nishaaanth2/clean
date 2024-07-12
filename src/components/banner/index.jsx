@@ -6,7 +6,7 @@ import './style.css';
 
 
 
-export default function Banner() {
+export default function Parallax() {
 
 
     return (

@@ -17,7 +17,7 @@ export default function Contact() {
 
   const items = [
     {
-      src: "/carousel/b1.jpg",
+      src: "/carousel/cv1.jpg",
       designItem: "Logo Suite",
     },
     {
@@ -37,7 +37,7 @@ export default function Contact() {
       designItem: "Brand Guidelines",
     },
     {
-      src: "/carousel/b3.jpg",
+      src: "/carousel/hr-b.jpg",
       designItem: "Business Card Design",
     },
     {

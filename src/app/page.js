@@ -35,7 +35,12 @@ const linkDetails = [
     title: "SVG Logo Glow",
     desc: "Instantly deploy your Next.js site to a shareable URL with Vercel.",
     link: "/svgoutline",
-  },,
+  },
+  {
+    title: "Parallax",
+    desc: "Instantly deploy your Next.js site to a shareable URL with Vercel.",
+    link: "/parallax",
+  },
   {
     title: "Deploy",
     desc: "Instantly deploy your Next.js site to a shareable URL with Vercel.",

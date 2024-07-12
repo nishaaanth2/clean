@@ -67,6 +67,7 @@ const Home = () => {
             </h1>
             <p className="-mt-2 font-poppins text-neutral-500 tracking-wide">
               A SVG outline glow animation. If you want in your own svg, contact nishaanthms1@gmail.com.
+              CC: https://www.youtube.com/watch?v=KKQQn_lDuVQ
             </p>
           </div>
           
