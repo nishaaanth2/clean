@@ -51,6 +51,18 @@ const linkDetails = [
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
+       <div className="flex items-center gap-4 mb-16">
+        <span className="text-2xl font-serif">Cl</span>
+        <div className="w-12 h-12 border border-[#C5B358] rounded-full flex items-center justify-center">
+          <div className="w-8 h-8 relative">
+            {/* Simplified flower icon */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-4 h-6 border-[1px] border-[#C5B358] rounded-full transform rotate-45" />
+            </div>
+          </div>
+        </div>
+        <span className="text-2xl font-serif">an</span>
+      </div>
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         {linkDetails.map((link, index) => (
           <a

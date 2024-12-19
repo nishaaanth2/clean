@@ -3,6 +3,7 @@ import "./globals.css";
 import localFont from 'next/font/local'
 const myFont = localFont({ src: '../../public/bloverly.ttf' })
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 // export const metadata = {
