@@ -23,7 +23,6 @@ export default function Valentine() {
     const [screen, setScreen] = useState(0); // 0: question, 1: yes, 2: no
     const [b1, setB1] = useState("order-1");
     const [b2, setB2] = useState("order-2");
-    const [yesSelected, setYesSelected] = useState(false);
     const handleNoClick = () => {
         setNoIndex((noIndex + 1) % no_text.length);
         if (noIndex === no_text.length - 2) {
@@ -32,21 +31,17 @@ export default function Valentine() {
         }
         if (noIndex === no_text.length - 1) {
             setScreen(2);
-            setYesSelected(false);
             reset();
         }
-
     };
 
     const handleYesClick = () => {
         setScreen(1);
-        setYesSelected(true);
         reset();
     };
 
     const handleQuestionClick = () => {
         setScreen(0);
-        setYesSelected(false);
         reset();
     };
 
@@ -57,24 +52,59 @@ export default function Valentine() {
     };
 
     const shareAsImage = async () => {
+        const element = document.getElementById('valentine-card');
         try {
-            const shareData = {
-                title: 'Valentine\'s Day',
-                text: 'Happy Valentine\'s Day!',
-                files: [
-                    new File(
-                        [await fetch(yesSelected ? '/val_yes.png' : '/val_no.png').then(r => r.blob())],
-                        'valentine.png',
-                        { type: 'image/png' }
-                    )
-                ]
-            };
+            // Wait for images to load before capturing
+            const images = element.getElementsByTagName('img');
+            await Promise.all(Array.from(images).map(img => {
+                if (img.complete) return Promise.resolve();
+                return new Promise((resolve, reject) => {
+                    img.onload = resolve;
+                    img.onerror = reject;
+                });
+            }));
+
+            const canvas = await html2canvas(element, {
+                useCORS: true,
+                foreignObjectRendering: true,
+                allowTaint: true,
+                scrollY: -152,
+                onclone: function(clonedDoc) {
+                    const images = clonedDoc.getElementsByTagName('img');
+                    for(let img of images) {
+                        // Set crossOrigin to anonymous to handle CORS
+                        img.crossOrigin = "anonymous";
+                        // Force reload image in cloned doc
+                        const originalSrc = img.src;
+                        img.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
+                        img.src = originalSrc;
+                    }
+                }
+            });
             
-            if (navigator.canShare && navigator.canShare(shareData)) {
-                await navigator.share(shareData);
+            const dataUrl = canvas.toDataURL('image/png');
+            const blob = await (await fetch(dataUrl)).blob();
+            
+            const filesArray = [
+                new File(
+                    [blob],
+                    'valentine-card.png',
+                    {
+                        type: blob.type,
+                        lastModified: new Date().getTime()
+                    }
+                )
+            ];
+            if (navigator.share && navigator.canShare({ files: filesArray })) {
+                await navigator.share({
+                    files: filesArray,
+                    title: 'Valentine\'s Day', 
+                    text: 'Happy Valentine\'s Day!',
+                    url: window.location.href
+                });
             }
-        } catch (err) {
-            console.error('Error sharing:', err);
+        } catch (error) {
+            console.error('Error sharing:', error);
         }
     };
 
@@ -138,7 +168,7 @@ export default function Valentine() {
 
                                 onClick={shareAsImage}
                             >
-                                <span className="leading-none">Share</span>
+                                <span className="">Share</span>
                                 <ShareIcon className="w-4 h-4 mb-1" />
                             </button>
                             <p className={cn("mt-5 text-xs uppercase text-black border-b-2 border-[#c9302b] tracking-widest font-medium text-center cursor-pointer flex", inter.className)}
@@ -164,7 +194,7 @@ export default function Valentine() {
 
                                 onClick={shareAsImage}
                             >
-                                <span className="leading-none">Share</span>
+                                <span className="">Share</span>
                                 <ShareIcon className="w-4 h-4 mb-1" />
                             </button>
                             <p className={cn("mt-5 text-xs uppercase text-black border-b-2 border-[#c9302b] tracking-widest font-medium text-center cursor-pointer flex", inter.className)}
