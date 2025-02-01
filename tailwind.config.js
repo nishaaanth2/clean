@@ -20,6 +20,20 @@ module.exports = {
         'mwgray':'#6d6d6d',
   
       },
+      keyframes: {
+        tilt: {
+          '0%': { transform: 'rotate(0deg)' },
+          '25%': { transform: 'rotate(0deg)' },
+          '25.1%': { transform: 'rotate(10deg)' },
+          '75%': { transform: 'rotate(10deg)' },
+          '75.1%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(0deg)' },
+        }
+      },
+      animation: {
+        tilt: 'tilt 2s infinite',
+      },
+
       fontSize: {
         '4-5xl': ['2.6rem','3rem'],
       }

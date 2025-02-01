@@ -4,7 +4,9 @@ import localFont from 'next/font/local'
 const myFont = localFont({ src: '../../public/bloverly.ttf' })
 
 
-const inter = Inter({ subsets: ["latin"] });
+
+
+export const inter = Inter({ subsets: ["latin"] });
 
 // export const metadata = {
 //   title: "Creatsdse Next App",

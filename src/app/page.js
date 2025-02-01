@@ -42,9 +42,9 @@ const linkDetails = [
     link: "/parallax",
   },
   {
-    title: "Deploy",
-    desc: "Instantly deploy your Next.js site to a shareable URL with Vercel.",
-    link: "/deploy",
+    title: "Valentine",
+    desc: "Be my valentine?",
+    link: "/valentine",
   },
 ];
 
