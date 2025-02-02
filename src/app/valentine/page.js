@@ -79,7 +79,7 @@ export default function Valentine() {
     };
 
     return (
-        <div className="w-screen h-[100svh] flex item-center justify-center bg-[#acacac]">
+        <div className="w-screen h-[100svh] flex items-center justify-center bg-[#acacac]">
             <div className="fixed bottom-[10%] ">
                 <a href="https://github.com/nishaaanth2/clean/tree/main/src/app/valentine" target="_blank" rel="noopener noreferrer" 
                 className="flex items-center justify-center w-40 h-10 bg-black bg-opacity-20 hover:bg-opacity-30 rounded-full transition-all">
