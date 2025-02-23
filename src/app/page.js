@@ -1,6 +1,13 @@
 import Image from "next/image";
+import posthog from "posthog-js";
 
 const linkDetails = [
+  {
+    title: "Typewriting",
+    desc: "A straightforward CSS animation example.",
+    link: "/typewriting",
+    new: true,
+  },
   {
     title: "Valentine",
     desc: "Be my valentine?",
@@ -47,6 +54,7 @@ const linkDetails = [
     desc: "Instantly deploy your Next.js site to a shareable URL with Vercel.",
     link: "/parallax",
   },
+  
 ];
 
 export default function Home() {
@@ -72,6 +80,7 @@ export default function Home() {
             <a
               key={index}
               href={link.link}
+              onClick={posthog.capture('my event', { property: 'value' })}
               className="group relative p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200 border border-gray-100 dark:border-gray-700 overflow-hidden"
             >
               {link.new && (

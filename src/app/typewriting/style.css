@@ -1,0 +1,25 @@
+.typewriter {
+    /* 20ch gives you space for roughly 20 characters wide */
+    width: 20ch;             
+    font-family: monospace;  
+    /* "text-wrap: nowrap" is not standard yet, so you may use: */
+    /* white-space: nowrap; */
+    text-wrap: nowrap;
+    overflow: hidden;        /* hide text beyond the current 'width' */
+    
+    /* Apply the typing animation: 
+       - 2s = total duration
+       - steps(20) = animate in 20 discrete steps (one per character)
+       - infinite alternate-reverse = repeat back and forth */
+    animation: typing 2s steps(20) infinite alternate-reverse;
+  }
+  
+  /* Define the typing keyframes */
+  @keyframes typing {
+    from {
+      width: 0ch;  /* start with zero characters visible */
+    }
+    to {
+      width: 20ch; /* end with all characters visible */
+    }
+  }
