@@ -3,16 +3,22 @@ import posthog from "posthog-js";
 
 const linkDetails = [
   {
+    title: "World Map",
+    desc: "Interactive geographic data visualization for analytics.",
+    link: "/worldmap",
+    new: true,
+  },
+  {
     title: "Typewriting",
     desc: "A straightforward CSS animation example.",
     link: "/typewriting",
-    new: true,
+    new: false,
   },
   {
     title: "Valentine",
     desc: "Be my valentine?",
     link: "/valentine", 
-    new: true,
+    new: false,
   },
   {
     title: "Patch Image",
